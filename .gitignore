@@ -1,5 +1,4 @@
 .vscode/
-results/
 
 *.out
 results_*.csv
