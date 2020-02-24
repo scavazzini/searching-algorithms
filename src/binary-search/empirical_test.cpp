@@ -28,29 +28,26 @@ int main() {
         1000000000,
     };
 
-    vector<long long> t;
+    vector<int> t;
 
     for (int i = 0; i < 10; i++) {
 
         t.clear();
 
-        for (int j = 0; j < 50; j++) {
+        // Instantiate array
+        int* arr = new int[groups[i]];
 
-            // Instantiate array
-            int* arr = new int[groups[i]];
+        // Populating the array
+        for (int l = 0; l < groups[i]; l++) {
+            arr[l] = l;
+        }
 
-            // Populating the array
-            for (int l = 0; l < groups[i]; l++) {
-                arr[l] = l;
-            }
+        for (int j = 0; j < 50000; j++) {
 
             // // Running the algorithm and measuring time
             auto initialTime = chrono::high_resolution_clock::now();
             int foundAt = binarySearch(arr, groups[i], groups[i]);
             auto finalTime = chrono::high_resolution_clock::now();
-
-            // Deallocating array
-            delete[] arr;
 
             // Calculating time and printing results
             auto executionTime =
@@ -58,16 +55,20 @@ int main() {
 
             t.push_back(executionTime.count());
 
-            file << groups[i] << ";" << executionTime.count() << endl;
+            // Print each result
+            //file << groups[i] << ";" << executionTime.count() << endl;
 
         }
 
-        long long sum = 0;
+        // Deallocating array
+        delete[] arr;
+
+        int sum = 0;
         for (int k = 0; k < t.size(); k++) {
             sum += t[k];
         }
         
-        file << "> " << groups[i] << ";" << ((double)sum/t.size()) << endl << endl;
+        file << groups[i] << ";" << ((double)sum/t.size()) << endl;
 
     }
 
