@@ -9,13 +9,13 @@ It's mechanism is to iterating through all elements, one by one, until the value
 
 Empirical Test in worst-case scenario.
 
-| Array size    | Iterations    | Time       |
+| Elements      | Iterations    | Time (ms)  |
 |--------------:|--------------:|-----------:|
-| 100 000       | 100 000       | 0ms        |
-| 1 000 000     | 1 000 000     | 2ms        |
-| 10 000 000    | 10 000 000    | 20ms       |
-| 100 000 000   | 100 000 000   | 204ms      |
-| 1 000 000 000 | 1 000 000 000 | 2046ms     |
+| 100 000       | 100 000       | 0          |
+| 1 000 000     | 1 000 000     | 2          |
+| 10 000 000    | 10 000 000    | 20         |
+| 100 000 000   | 100 000 000   | 204        |
+| 1 000 000 000 | 1 000 000 000 | 2 046      |
 
 ![Graph](/src/linear-search/graph/linear-search-graph.png)
 
