@@ -1,3 +1,5 @@
+#include "binarysearch.h"
+
 int binarySearch(int *arr, int arrSize, int element) {
 
     int left = 0;

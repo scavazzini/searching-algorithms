@@ -5,6 +5,7 @@
 #include <ctime>
 #include <string>
 #include "binary-search/binarysearch.h"
+#include "linear-search/linearsearch.h"
 
 using namespace std;
 
