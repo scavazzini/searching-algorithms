@@ -1,4 +1,6 @@
 .vscode/
+.idea/
+cmake-build-*/
 
 *.out
 results_*.csv
