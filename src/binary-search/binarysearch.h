@@ -1,1 +1,6 @@
-int binarySearch(int *arr, int arrSize, int element);
+class BinarySearch {
+
+public:
+    static int search(const int arr[], int arrSize, int element);
+
+};

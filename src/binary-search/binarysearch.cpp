@@ -1,6 +1,6 @@
 #include "binarysearch.h"
 
-int binarySearch(int *arr, int arrSize, int element) {
+int BinarySearch::search(const int *arr, int arrSize, int element) {
 
     int left = 0;
     int middle = 0;
@@ -24,3 +24,4 @@ int binarySearch(int *arr, int arrSize, int element) {
     return -1;
 
 }
+

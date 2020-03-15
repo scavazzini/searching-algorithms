@@ -58,7 +58,7 @@ int main() {
 
             // Running the algorithm and measuring time
             auto initialTime = chrono::high_resolution_clock::now();
-            int foundAt = binarySearch(arr, n, n);
+            int foundAt = BinarySearch::search(arr, n, n);
             auto finalTime = chrono::high_resolution_clock::now();
 
             // Calculating time and printing results
